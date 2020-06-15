@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset=utf-8">
+  <meta name="description" content="daily work ">
+  <meta name="keywords" content="Unit5-03">
+  <meta name=author" content="Jordan Wang">
+  <meta name="viewport' content='width=device-width, initial-scale=1.0">
+        <title> </title>
+    </head>
+    <body>
+ <p>put a numbe in it will tell you what kind of movie you should watch</p>
+<p><input id="number" type="text" placeholder="Enter your age"/></p>
+<p><button onclick="setGreeting()">check</button></p>
+    </body>
+    <script>
+function setGreeting()
+{
+  var greeting=document.getElementById("number").value
+  if (greeting >= 17) 
+  {
+  greeting="You can see an R movie alone";
+  }
+  else if (greeting >= 13)
+  {
+  greeting="You can see a PG-13 movie alone";
+  }
+  else if (greeting >= 5)
+  {
+  greeting="You can see a G or PG movie alone";
+  }
+  else
+  {
+  greeting="You are too toung to watch a movie";
+  }
+  document.getElementById("number").value = greeting;
+}
+</script>
+</html>
